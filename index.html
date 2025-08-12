@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jebastin Starlin - Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+<header class="header d-flex justify-content-end align-items-center p-3">
+    <nav class="navbar d-none d-md-block">
+        <a href="#" onclick="showSection('home')" class="active">Home</a>
+        <a href="#" onclick="showSection('about')">About</a>
+        <a href="#" onclick="showSection('service')">Service</a>
+        <a href="#" onclick="showSection('portfolio')">Portfolio</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+    </nav>
+    <!-- Mobile Menu Button -->
+    <div class="d-block d-md-none">
+        <button class="btn btn-outline-light" data-toggle="collapse" data-target="#mobileNav">Menu</button>
+    </div>
+</header>
+
+<!-- Mobile Nav -->
+<div class="collapse" id="mobileNav">
+    <nav class="d-flex flex-column text-center p-2" style="background: #1a2332;">
+        <a href="#" onclick="showSection('home')" class="p-2" style="color: #ededed;">Home</a>
+        <a href="#" onclick="showSection('about')" class="p-2" style="color: #ededed;">About</a>
+        <a href="#" onclick="showSection('service')" class="p-2" style="color: #ededed;">Service</a>
+        <a href="#" onclick="showSection('portfolio')" class="p-2" style="color: #ededed;">Portfolio</a>
+        <a href="#" onclick="showSection('contact')" class="p-2" style="color: #ededed;">Contact</a>
+    </nav>
+</div>
+
+<!-- Home Section -->
+<section id="home" class="home container-fluid py-4 section active">
+    <div class="row align-items-center">
+        <!-- Left Content -->
+        <div class="home-content col-md-7 mb-4">
+            <h1>Hi,I'm Jebastin Starlin</h1>
+            <h3>Fullstack Developer</h3>
+            <p>
+                Fullstack Developer specializing in React, Node.js, and modern web technologies. I build complete applications from responsive frontends to scalable backend APIs, focusing on clean code and seamless user experiences.
+            </p>
+            <div class="btn-box d-flex flex-row">
+                <button class="btn-box1 mr-2 mb-2" onclick="showSection('portfolio')">Projects</button>
+                <button class="btn-box2 ml-md-4 mb-2">View Resume</button>
+            </div>
+        </div>
+        <!-- Right Image -->
+        <div class="col-md-5 ml-5 text-center">
+            <img src="https://i.postimg.cc/4dYcy3sN/Whats-App-Image-2025-06-17-at-5-50-07-PM.jpg" 
+                 class="jebastin img-fluid" alt="Jebastin Starlin">
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section container-fluid py-4">
+    <div class="row align-items-center">
+        <div class="col-md-6 mb-4">
+            <h1 style="font-size:56px; font-weight:700; line-height:1.2;">About Me</h1>
+            <h3 style="font-size:32px; font-weight:700; color:#00abf0;">My Journey & Passion</h3>
+            <p style="font-size:16px; margin:20px 0 40px;">
+                I'm a passionate developer who started my journey with frontend technologies and evolved into full-stack development. 
+                My curiosity for creating complete digital solutions drives me to continuously learn and adapt to new technologies.
+                I believe in writing clean, maintainable code and creating user experiences that make a difference.
+            </p>
+            
+            <div class="mb-4">
+                <h4 style="color:#00abf0; margin-bottom:20px;">Technical Skills</h4>
+                
+                <div class="skill-name">HTML/CSS - 90%</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%;"></div>
+                </div>
+                
+                <div class="skill-name">JavaScript - 85%</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%;"></div>
+                </div>
+                
+                <div class="skill-name">React.js - 80%</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%;"></div>
+                </div>
+                
+                <div class="skill-name">Node.js - 75%</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%;"></div>
+                </div>
+                
+                <div class="skill-name">Database Management - 70%</div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 70%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 text-center">
+            <div style="background:#1a2332; border:2px solid #00abf0; border-radius:15px; padding:30px;">
+                <h4 style="color:#00abf0; margin-bottom:20px;">Quick Facts</h4>
+                <div style="text-align:left;">
+                    <p><strong style="color:#00abf0;">Experience:</strong> 2+ years learning & building</p>
+                    <p><strong style="color:#00abf0;">Focus:</strong> Full-stack web development</p>
+                    <p><strong style="color:#00abf0;">Education:</strong> Self-taught & continuous learning</p>
+                    <p><strong style="color:#00abf0;">Interests:</strong> New technologies, problem-solving</p>
+                    <p><strong style="color:#00abf0;">Goal:</strong> Building impactful applications</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="service" class="section container-fluid py-4">
+    <div class="row">
+        <div class="col-12 text-center mb-5">
+            <h1 style="font-size:56px; font-weight:700; line-height:1.2;">Services</h1>
+            <h3 style="font-size:32px; font-weight:700; color:#00abf0;">What I Can Do For You</h3>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h4 style="color:#00abf0; margin-bottom:15px;">Frontend Development</h4>
+                <p>Responsive web design, interactive user interfaces, cross-browser compatibility, and performance optimization using modern frameworks like React.</p>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="service-card">
+                <div class="service-icon">⚙️</div>
+                <h4 style="color:#00abf0; margin-bottom:15px;">Backend Development</h4>
+                <p>RESTful API development, database design & integration, server-side logic, and authentication systems using Node.js and Express.</p>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="service-card">
+                <div class="service-icon">🌐</div>
+                <h4 style="color:#00abf0; margin-bottom:15px;">Full-Stack Solutions</h4>
+                <p>Complete web applications, e-commerce websites, business websites, and portfolio sites with end-to-end functionality.</p>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="service-card">
+                <div class="service-icon">🔧</div>
+                <h4 style="color:#00abf0; margin-bottom:15px;">Website Maintenance</h4>
+                <p>Code review & optimization, bug fixes & troubleshooting, performance improvements, and ongoing technical support.</p>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="service-card">
+                <div class="service-icon">💡</div>
+                <h4 style="color:#00abf0; margin-bottom:15px;">Consultation</h4>
+                <p>Technical planning, architecture design, technology recommendations, and project strategy for your development needs.</p>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="service-card">
+                <div class="service-icon">📱</div>
+                <h4 style="color:#00abf0; margin-bottom:15px;">Responsive Design</h4>
+                <p>Mobile-first development approach ensuring your website looks and works perfectly on all devices and screen sizes.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="section container-fluid py-4">
+    <div class="row">
+        <div class="col-12 text-center mb-5">
+            <h1 style="font-size:56px; font-weight:700; line-height:1.2;">Portfolio</h1>
+            <h3 style="font-size:32px; font-weight:700; color:#00abf0;">My Recent Work</h3>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="project-card">
+                <h4 style="color:#00abf0; margin-bottom:15px;">E-Commerce Website</h4>
+                <p>A full-stack e-commerce platform with user authentication, shopping cart, payment integration, and admin panel.</p>
+                <div class="mb-3">
+                    <span class="project-tech">React</span>
+                    <span class="project-tech">Node.js</span>
+                    <span class="project-tech">MongoDB</span>
+                    <span class="project-tech">Express</span>
+                </div>
+                <div>
+                    <button class="btn-box2 mr-2" style="width:120px; height:40px; font-size:14px;">Live Demo</button>
+                    <button class="btn-box1" style="width:120px; height:40px; font-size:14px;">Source Code</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="project-card">
+                <h4 style="color:#00abf0; margin-bottom:15px;">Task Management App</h4>
+                <p>A productivity app with drag-and-drop functionality, user authentication, and real-time updates for team collaboration.</p>
+                <div class="mb-3">
+                    <span class="project-tech">React</span>
+                    <span class="project-tech">Firebase</span>
+                    <span class="project-tech">CSS3</span>
+                    <span class="project-tech">JavaScript</span>
+                </div>
+                <div>
+                    <button class="btn-box2 mr-2" style="width:120px; height:40px; font-size:14px;">Live Demo</button>
+                    <button class="btn-box1" style="width:120px; height:40px; font-size:14px;">Source Code</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="project-card">
+                <h4 style="color:#00abf0; margin-bottom:15px;">Weather Dashboard</h4>
+                <p>A responsive weather application with location-based forecasts, interactive charts, and favorite locations feature.</p>
+                <div class="mb-3">
+                    <span class="project-tech">JavaScript</span>
+                    <span class="project-tech">API Integration</span>
+                    <span class="project-tech">Chart.js</span>
+                    <span class="project-tech">Bootstrap</span>
+                </div>
+                <div>
+                    <button class="btn-box2 mr-2" style="width:120px; height:40px; font-size:14px;">Live Demo</button>
+                    <button class="btn-box1" style="width:120px; height:40px; font-size:14px;">Source Code</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="project-card">
+                <h4 style="color:#00abf0; margin-bottom:15px;">Restaurant Website</h4>
+                <p>A modern restaurant website with online reservation system, menu display, and customer review functionality.</p>
+                <div class="mb-3">
+                    <span class="project-tech">HTML5</span>
+                    <span class="project-tech">CSS3</span>
+                    <span class="project-tech">JavaScript</span>
+                    <span class="project-tech">PHP</span>
+                </div>
+                <div>
+                    <button class="btn-box2 mr-2" style="width:120px; height:40px; font-size:14px;">Live Demo</button>
+                    <button class="btn-box1" style="width:120px; height:40px; font-size:14px;">Source Code</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section container-fluid py-4">
+    <div class="row">
+        <div class="col-12 text-center mb-5">
+            <h1 style="font-size:56px; font-weight:700; line-height:1.2;">Contact</h1>
+            <h3 style="font-size:32px; font-weight:700; color:#00abf0;">Let's Work Together</h3>
+        </div>
+        
+        <div class="col-md-8">
+            <div class="contact-form">
+                <h4 style="color:#00abf0; margin-bottom:20px;">Send Message</h4>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-box1" style="width:150px; height:45px; font-size:16px;">Send Message</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="contact-info">
+                <h4 style="color:#00abf0; margin-bottom:20px;">Get In Touch</h4>
+                <div style="text-align:left; margin-bottom:30px;">
+                    <p><strong style="color:#00abf0;">📧 Email:</strong><br>jebastin.starlin@email.com</p>
+                    <p><strong style="color:#00abf0;">📍 Location:</strong><br>Coimbatore, Tamil Nadu, India</p>
+                    <p><strong style="color:#00abf0;">💼 Status:</strong><br>Available for freelance projects</p>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" title="LinkedIn">💼</a>
+                    <a href="#" title="GitHub">🐙</a>
+                    <a href="#" title="Twitter">🐦</a>
+                    <a href="#" title="Email">📧</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function showSection(sectionName) {
+        // Hide all sections
+        const sections = document.querySelectorAll('.section, .home');
+        sections.forEach(section => {
+            section.classList.remove('active');
+        });
+        
+        // Show selected section
+        const targetSection = document.getElementById(sectionName);
+        if (targetSection) {
+            targetSection.classList.add('active');
+        }
+        
+        // Update navigation active state
+        const navLinks = document.querySelectorAll('.navbar a');
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+        });
+        
+        // Add active class to clicked nav item
+        event.target.classList.add('active');
+        
+        // Close mobile menu if open
+        const mobileNav = document.getElementById('mobileNav');
+        if (mobileNav.classList.contains('show')) {
+            mobileNav.classList.remove('show');
+        }
+    }
+    
+    // Smooth animation for skill bars on about page load
+    document.addEventListener('DOMContentLoaded', function() {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const progressBars = entry.target.querySelectorAll('.skill-progress');
+                    progressBars.forEach(bar => {
+                        bar.style.width = bar.style.width;
+                    });
+                }
+            });
+        });
+        
+        const aboutSection = document.getElementById('about');
+        if (aboutSection) {
+            observer.observe(aboutSection);
+        }
+    });
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
